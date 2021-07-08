@@ -17,3 +17,4 @@ private
 def user_params
     params.require(:user).permit(:usrname, :encrypted_password , :email)
 end
+end
