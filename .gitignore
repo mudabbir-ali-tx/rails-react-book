@@ -37,4 +37,6 @@
 /node_modules
 /yarn-error.log
 yarn-debug.log*
-.yarn-integrity
+.yarn-integrit
+
+/config/database.yml
