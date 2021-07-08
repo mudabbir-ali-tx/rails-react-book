@@ -24,8 +24,8 @@ export default (
                 <Route path="/book" exact component={NewBook} />
                 <Route path="/articles" exact component={Articles} />
                 <Route path="/article/:id" exact component={Article} />
-                <Route path="/SignUp" exact component={SignUp} />
                 <Route path="/Login" exact component={Login} />
+                <Route path="/SignUp" exact component={SignUp} />
                 {/* <Route path="/Header" exact component={Header} /> */}
                 {/* <Route path="/Button" exact component={Button} /> */}
                 {/* <Route path="/Header" exact component={Header} /> */}
