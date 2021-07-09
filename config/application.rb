@@ -32,6 +32,7 @@ module BookReviewRailsReact
 resource '*', headers: :any, methods: [:get , :post , :put, :patch, :delete, :options]
     end
   end
+  config.assets.initialize_on_precompile = false
 
     # Configuration for the application, engines, and railties goes here.
     #
