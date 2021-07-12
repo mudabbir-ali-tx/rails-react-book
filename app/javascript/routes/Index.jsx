@@ -15,7 +15,6 @@ import Navbar from "../components/NavBar"
 export default (
     <>
         <Navbar />
-
         <Router>
             <Switch>
                 <Route path="/" exact component={Home} />
