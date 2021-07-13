@@ -1,0 +1,15 @@
+current directory: /home/syed/Desktop/Book-Review/book_review_rails_react/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/usr/share/rvm/rubies/ruby-2.7.0/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20210712-424822-1d1ik9y.rb extconf.rb
+creating Makefile
+
+current directory: /home/syed/Desktop/Book-Review/book_review_rails_react/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/syed/Desktop/Book-Review/book_review_rails_react/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/syed/Desktop/Book-Review/book_review_rails_react/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20210712-424822-1mcsa0z/skiptrace/internal

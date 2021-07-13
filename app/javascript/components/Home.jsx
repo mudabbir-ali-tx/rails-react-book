@@ -44,12 +44,7 @@ export default () => (
 
 
                 </div>
-                <hr className="my-2" />
-                <Link to="/SignUp"
-                    className="btn btn-lg custom-button align-center"
-                    role="button" > Sign-Up
 
-                </Link>
             </div>
         </div>
 

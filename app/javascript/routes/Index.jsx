@@ -14,8 +14,8 @@ import Navbar from "../components/NavBar"
 // import Header from "../components/Header";
 export default (
     <>
-        <Navbar />
         <Router>
+            <Navbar />
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/books" exact component={Books} />

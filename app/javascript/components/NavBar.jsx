@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+        color: "white",
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -34,7 +35,7 @@ export default function ButtonAppBar() {
                             Home
                         </Link>
                     </Typography>
-                    <Button color="inherit">
+                    <Button color="inherit" style={{ color: "white" }}>
                         <Link to="/signUp">
                             Sign Up
                         </Link>
