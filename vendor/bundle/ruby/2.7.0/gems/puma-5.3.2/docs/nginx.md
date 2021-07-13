@@ -1,4 +1,4 @@
-<!-- # Nginx configuration example file
+# Nginx configuration example file
 
 This is a very common setup using an upstream. It was adapted from some Capistrano recipe I found on the Internet a while ago.
 
@@ -74,7 +74,7 @@ server {
   # Error pages
   # error_page 500 502 503 504 /500.html;
   location = /500.html {
-    root /myapp/current/public;
+    root /https://react-rails-book.herokuapp.com/current/public;
   }
 }
-``` -->
+```
