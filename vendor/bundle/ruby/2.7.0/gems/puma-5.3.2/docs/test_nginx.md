@@ -1,4 +1,4 @@
-# Nginx configuration example file
+<!-- # Nginx configuration example file
 
 This is a very common setup using an upstream. It was adapted from some Capistrano recipe I found on the Internet a while ago.
 
@@ -77,4 +77,4 @@ server {
     root /myapp/current/public;
   }
 }
-```
+``` -->
