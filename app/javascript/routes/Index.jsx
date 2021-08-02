@@ -9,7 +9,9 @@ import Article from "../components/Article";
 import SignUp from "../components/SignUp";
 import Login from "../components/Login";
 import Header from "../components/Header";
-import Navbar from "../components/NavBar"
+import Navbar from "../components/NavBar";
+import ForgetPswd from "../components/ForgetPswd";
+import NewArticle from "../components/NewArticle";
 // import Button from "../components/Button"
 // import Header from "../components/Header";
 export default (
@@ -23,8 +25,10 @@ export default (
                 <Route path="/book" exact component={NewBook} />
                 <Route path="/articles" exact component={Articles} />
                 <Route path="/article/:id" exact component={Article} />
-                <Route path="/Login" exact component={Login} />
-                <Route path="/SignUp" exact component={SignUp} />
+                <Route path="/login" exact component={Login} />
+                <Route path="/signUp" exact component={SignUp} />
+                <Route path="/forgetPswd" exact component={ForgetPswd} />
+                <Route path="/article" exact component={NewArticle} />
                 {/* <Route path="/Header" exact component={Header} /> */}
                 {/* <Route path="/Button" exact component={Button} /> */}
                 {/* <Route path="/Header" exact component={Header} /> */}

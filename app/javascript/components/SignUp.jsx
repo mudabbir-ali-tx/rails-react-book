@@ -12,7 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
-
+import { useHistory } from "react-router-dom";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -48,7 +48,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignUp() {
   const classes = useStyles()
-
+  const history = useHistory();
+  function handleClick() {
+    history.push("/login");
+  }
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -125,9 +128,9 @@ export default function SignUp() {
           </Button>
           <Grid container justifyContent="flex-end">
             <Grid item>
-              <Link href="/Login" variant="body2">
-                Already have an account? Login in
-              </Link>
+              <Button onClick={handleClick} variant="body2">
+                Already have an account? Login
+              </Button>
             </Grid>
           </Grid>
         </form>
@@ -136,3 +139,56 @@ export default function SignUp() {
     </Container>
   )
 }
+
+// import React, { Component } from 'react'
+// import './SignUp.css'
+// export default class SignUp extends Component {
+//   state = {
+//     username: '',
+//     password: '',
+//     firstName: '',
+//     lastName: '',
+//   }
+//   handleChange = (event) => {
+//     this.setState({
+//       [event.target.name]: event.target.value,
+//     })
+//   }
+//   handleSubmit = (event) => {
+//     event.preventDefault()
+//     this.props.signUp(this.state)
+//   }
+//   render() {
+//     return (
+//       <form class="sign" onSubmit={this.handleSubmit}>
+//         <h1>Sign Up Form</h1>
+//         <label>Username:</label>
+//         <input
+//           name="username"
+//           value={this.state.username}
+//           onChange={this.handleChange}
+//         />
+//         <label>Password:</label>
+//         <input
+//           name="password"
+//           type="password"
+//           value={this.state.password}
+//           onChange={this.handleChange}
+//         />
+//         <label>First Name:</label>
+//         <input
+//           name="firstName"
+//           value={this.state.firstName}
+//           onChange={this.handleChange}
+//         />
+//         <label>Last Name:</label>
+//         <input
+//           name="lastName"
+//           value={this.state.lastName}
+//           onChange={this.handleChange}
+//         />
+//         <input type="submit" value="Register" />
+//       </form>
+//     )
+//   }
+// }

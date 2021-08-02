@@ -38,7 +38,7 @@ class Articles extends React.Component {
             </div>
         ));
         const noArticle = (
-            <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
+            <div className=" vh-50 d-flex align-items-center justify-content-center">
                 <h4>
                     No articles yet. Why not <Link to="/new_article">create one</Link>
                 </h4>

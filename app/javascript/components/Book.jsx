@@ -45,7 +45,7 @@ class Book extends React.Component {
                 params: { id }
             }
         } = this.props;
-        const url = `/api/v1/destroy/${id}`;
+        const url = `/api/v1/book/destroy/${id}`;
         const token = document.querySelector('meta[name="csrf-token"]').content;
 
         fetch(url, {

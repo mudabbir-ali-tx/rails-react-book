@@ -29,7 +29,7 @@ class Api::V1::ArticlesController < ApplicationController
   private
  
   def article_params
-    params.permit(:name, :image, :commnet, :description)
+    params.permit(:name , :comment, :description)
   end
 
   def article
